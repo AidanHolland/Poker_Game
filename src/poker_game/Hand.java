@@ -26,8 +26,5 @@ public class Hand extends GameObject
         Arrays.fill(cardsInHand, null);
     }
     
-    public void loadGraphic()
-    {
-        
-    }
+   
 }

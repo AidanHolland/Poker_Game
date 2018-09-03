@@ -3,7 +3,7 @@ package poker_game;
 public abstract class GameObject
 {
     private String graphic;
-    
+    protected String loadPath;
     
     public String getGraphic()
     {
@@ -11,7 +11,8 @@ public abstract class GameObject
     }
     
     //Load whatever the string will be, obtain from text file
-    public abstract void loadGraphic();
+    public void loadGraphic()
+    {}
     
         
     
