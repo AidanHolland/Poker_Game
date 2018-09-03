@@ -5,7 +5,10 @@ public class Hand extends GameObject
 {
     Card cardsInHand[] = new Card[2];
     
-    
+    public Hand(String loadPath)
+    {
+        super("");
+    }
     
     
     //Return a String with cards value "IE Flush of Hearts, Jack High"

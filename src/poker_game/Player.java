@@ -1,16 +1,50 @@
+
 package poker_game;
 
-public class Player extends Controllable
+
+public class Player extends GameObject
 {
-    Player()
+    private int bankRoll;
+    private int orderNumber;
+    private int amountToRaise;
+    
+    public Player()
     {
-        loadPath = "";
+        super("");
     }
     
-  
     
-    public void raise()
+    public void setBankRoll(int bankRoll)
     {
+        this.bankRoll = bankRoll;
+    }
+    
+    public int getBankRoll()
+    {
+        return bankRoll;
+    }
+    
+    public void setOrderNumber(int orderNumber)
+    {
+        this.orderNumber = orderNumber;
+    }
+    
+    public int getOrderNumber()
+    {
+        return orderNumber;
+    }
+    
+    
+    
+    public void raise(int raiseAmount)
+    {
+        if(bankRoll < raiseAmount)
+        {
+            
+        }
+        //Raise pot
+        //Reduce self amount
+        
     }
     
     public void check()
@@ -20,5 +54,5 @@ public class Player extends Controllable
     public void fold()
     {
     }
-    
+   
 }
