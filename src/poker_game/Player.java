@@ -7,6 +7,7 @@ public class Player extends GameObject
     private int bankRoll;
     private int orderNumber;
     private int amountToRaise;
+    private boolean controllable;
     
     public Player()
     {
@@ -34,7 +35,15 @@ public class Player extends GameObject
         return orderNumber;
     }
     
+    public void setControllable(boolean controllable)
+    {
+        this.controllable = controllable;
+    }
     
+    public boolean getControllable()
+    {
+        return controllable;
+    }
     
     public void raise(int raiseAmount)
     {
